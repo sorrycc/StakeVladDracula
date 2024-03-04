@@ -53,6 +53,8 @@ export default async function handler(req: NextRequest) {
       }
     );
 
+    console.log("response", response);
+
     return response;
   } catch (error) {
     console.error('Error:', error);
